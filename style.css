@@ -1,0 +1,134 @@
+body {
+  background-color: #3271a2;
+  font-family: 'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  height: 750px;
+  margin-top: 100px;
+}
+/* Laptop drawing */
+.laptop {
+    background: #fc9252 none repeat scroll 0 0;
+    border: 12px solid #e8ebf0;
+    border-radius: 10px 10px 0 0;
+    min-height: 54vh;
+    min-height: 500px;
+    margin: 17vh auto 0;
+    padding-top: 41px;
+    width: 60%;
+  max-width: 850px;
+  min-width: 657px;
+}
+
+.btm {
+    background: #f4f5f7 none repeat scroll 0 0;
+    border-radius: 0 0 20px 20px;
+    bottom: -50px;
+    height: 30px;
+    margin: 0 auto;
+    width: 82%;
+    z-index: 1;
+  max-width: 1000px;
+  min-width: 750px;
+}
+
+.btm::before {
+    background: #d8dbe1 none repeat scroll 0 0;
+    border-radius: 0 0 5px 5px;
+    bottom: -1px;
+    content: "";
+    display: block;
+    height: 5px;
+    left: 50%;
+    position: relative;
+    width: 42px;
+}
+.screen {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+
+}
+#quote {
+  color: white;
+  font-size: 2em;
+ 
+  overflow: hidden;
+}
+#author {
+  color: white;
+  text-align: right;
+  font-family: 'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif;
+  font-size: 1.5em;
+}
+#author::before {
+  content: " "; 
+}
+.buttons {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 80px;
+  position: absolute;
+  bottom: 50px
+  
+}
+#next-btn, #tweet-btn {
+  border: 2px solid white;
+  background-color: #fc9252;
+  color: white;
+  height: 50px;
+  width: 45%;
+  font-family: 'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif;
+  font-size: 1.5em;
+  display: block;
+  margin: 0 auto;
+  float: left;
+}
+#next-btn {
+  margin-right: 2%;
+}
+#next-btn:hover {
+  background-color: #ED6A5A;
+  transition: all 0.3s;
+}
+#tweet-btn:hover {
+  background-color: #3271a2;
+  transition: all 0.3s;
+}
+
+@media (max-device-width: 444px), (max-width: 730px) {
+  .laptop{
+  background-color: transparent;
+    border: transparent;
+    min-width: 400px;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .btm {
+    display: none;
+  }
+  .container {
+    min-width: 400px;
+    margin-top: 0;
+  }
+  #next-btn, #tweet-btn {
+    display: block;
+    clear: both;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+.footer {
+ width: inherit;
+  height: 30px;
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  color: #fff;
+}
+.footer a {
+  color: #fff;
+}
+
